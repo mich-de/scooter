@@ -178,6 +178,37 @@
       transform: rotate(15deg);
     }
 
+    /* Images */
+    .scooter-img {
+      display: block; width: 100%; height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 24px rgba(0,0,0,.08));
+    }
+    .img-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      background: linear-gradient(180deg, color-mix(in srgb, var(--primary) 4%, var(--surface)), var(--surface-2));
+      padding: .5rem;
+    }
+
+    .hero-imgs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .75rem;
+      margin-top: var(--space-6);
+    }
+    .hero-imgs .img-card {
+      padding: .75rem;
+    }
+
+    .panel-img {
+      width: 100%; max-height: 160px;
+      object-fit: contain;
+      margin-top: .75rem;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,.06));
+    }
+
     /* Hero */
     .hero {
       padding: clamp(3rem, 8vw, 6rem) 0 2.5rem;
@@ -881,6 +912,15 @@
             </article>
           </div>
           <p class="source-note">I punteggi sono editoriali e sintetizzano potenza, dotazione, promo e feedback pubblici disponibili al momento della scrittura.</p>
+
+          <div class="hero-imgs">
+            <div class="img-card">
+              <img class="scooter-img" src="sym-scooter.png" alt="SYM Symphony ST 200" loading="lazy" width="1000" height="700">
+            </div>
+            <div class="img-card">
+              <img class="scooter-img" src="voge-final.png" alt="Voge Sfida SR16 200" loading="lazy" width="1000" height="700">
+            </div>
+          </div>
         </aside>
       </div>
     </section>
@@ -1023,6 +1063,7 @@
                 <li>Impostazione meccanica semplice, taratura urbana, meno a suo agio in extraurbano veloce.</li>
               </ul>
               <div class="verdict-tag">→ Meglio per città e semplicità</div>
+              <img class="panel-img" src="sym-scooter.png" alt="SYM Symphony ST 200" loading="lazy" width="1000" height="700">
             </article>
 
             <article class="panel voge">
@@ -1041,6 +1082,7 @@
                 <li>Motore più brillante, adatto anche a tangenziali e trasferimenti extraurbani senza affanno.</li>
               </ul>
               <div class="verdict-tag">→ Meglio per misto città/extraurbano</div>
+              <img class="panel-img" src="voge-final.png" alt="Voge Sfida SR16 200" loading="lazy" width="1000" height="700">
             </article>
           </div>
 
